@@ -370,11 +370,10 @@ if Ssolve == true
 end
 
 %% Save data (for plotting in figure)
-% setIndx = 2;
-% fn_tosave = strcat('Data_CIeffectonTrajs_N',num2str(N),'_mub0_',num2str(mub0),'_alpha0_',...
-%     num2str(alpha0),'_maxT_',num2str(max(tstoreVec)),'_landscape_',whichlandscape,...
-%     '_numtrials',num2str(totnumtrials),'_set',num2str(setIndx));
-% fn_tosave = strrep(fn_tosave,'.','pt');
-% save(fn_tosave);
+setIndx = 1;
+fn_tosave = strcat('Data_CIeffectonTrajs_N',num2str(N),'_mub0_',num2str(mub0),'_alpha0_',...
+    num2str(alpha0),'_maxT_',num2str(max(tstoreVec)),'_landscape_',whichlandscape,...
+    '_numtrials',num2str(totnumtrials),'_set',num2str(setIndx));
+fn_tosave = strrep(fn_tosave,'.','pt');
+save(fn_tosave);
 
-% save(strcat('Data_CIeffectonTrajs_landscape',whichlandscape));

@@ -489,7 +489,7 @@ ylabel('Sscaled');
 legend(namecell,'location','best');
     
 %% save
-% versionIndx = 3;
-% fn2save = strcat('AllSimData_',whichlandscape,'_v',num2str(versionIndx));
-% save(fn2save)
+versionIndx = 3;
+fn2save = strcat('AllSimData_',whichlandscape,'_v',num2str(versionIndx));
+save(fn2save)
 
